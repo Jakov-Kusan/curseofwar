@@ -101,7 +101,7 @@ void output_grid(struct state *st, struct ui *ui, int ktime) {
       move(POSY(ui,i,j), POSX(ui,i,j)-1);
       switch (st->grid.tiles[i][j].cl) {
         case mountain: 
-          attrset(A_NORMAL | COLOR_PAIR(4));
+          attrset(A_NORMAL | COLOR_PAIR(0));
           addstr(" /\\^ "); 
           break;
         case mine: 
